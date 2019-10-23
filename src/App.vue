@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Un mapa de todos tus amigos!</h1>
+    <leafmap/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Map from './components/Map'
 
 export default {
   name: 'app',
+  data() {
+    return {}
+  },
+  methods: {},
   components: {
-    HelloWorld
+    'leafmap': Map
   }
 }
 </script>
